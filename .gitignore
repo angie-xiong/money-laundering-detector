@@ -66,4 +66,4 @@ out/
 ### Mac OS ###
 .DS_Store
 
-./scripts/db.sh
+/scripts/db.sh
