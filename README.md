@@ -20,4 +20,8 @@ Commands:
 # Apply spotless
 ./gradlew spotlessApply
 ./gradlew spotlessJavaApply
+
+# Fix code style violations
+./gradlew :spotlessJavaCheck
+./gradlew :spotlessApply
 ```
