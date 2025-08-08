@@ -15,22 +15,7 @@ public class TransactionsService {
 
     public List<Transaction> getTransaction() {
         return transactionRepository.findAll();
-        //		return new Transaction(
-        //				Generators.timeBasedGenerator().generate(),
-        //				DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(LocalDateTime.now()),
-        //				"010",
-        //				"8000EBD30",
-        //				"010",
-        //				"8000EBD30",
-        //				new BigDecimal("3697.34"),
-        //				"US Dollar",
-        //				new BigDecimal("3697.34"),
-        //				"US Dollar",
-        //				"Reinvestment",
-        //				false
-        //				);
     }
-    ;
 
     public Transaction save(Transaction transaction) {
         transaction.setId(Generators.timeBasedGenerator().generate());
