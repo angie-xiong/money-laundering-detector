@@ -6,9 +6,6 @@
 version: 2
 updates:
   - package-ecosystem: "gradle" # See documentation for possible values
-    registries:
-      - maven-artifactory-release
-      - maven-artifactory-snapshots
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
