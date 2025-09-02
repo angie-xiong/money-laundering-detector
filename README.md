@@ -5,4 +5,4 @@ This is a REST Java application that looking for money laundering behaviours fro
 
 [Swagger Link](http://localhost:8080/swagger-ui/index.html)
 
-Want to running locally? See instructions [here](./docs/development.md)
+Want to run locally? See instructions [here](./docs/development.md)
