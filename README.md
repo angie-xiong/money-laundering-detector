@@ -5,23 +5,4 @@ This is a REST Java application that looking for money laundering behaviours fro
 
 [Swagger Link](http://localhost:8080/swagger-ui/index.html)
 
-Commands:
-
-```
-# Build the app
-./gradlew build
-
-# Run the app
-./gradlew bootRun
-
-# Generate Jacoco report
-./gradlew jacocoTestReport
-
-# Apply spotless
-./gradlew spotlessApply
-./gradlew spotlessJavaApply
-
-# Fix code style violations
-./gradlew :spotlessJavaCheck
-./gradlew :spotlessApply
-```
+Want to running locally? See instructions [here](./docs/development.md)
