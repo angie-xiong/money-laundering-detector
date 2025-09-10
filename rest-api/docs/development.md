@@ -44,15 +44,15 @@ export DB_PASSWORD=<postgres-pwd>
 You will need a docker artifactory, such as docker hub. The command below will use the [Dockerfile](../Dockerfile) to build the image.
 
 ```
-docker build --build-arg JAR_FILE=build/libs/money-laundering-detector-0.0.1.jar --build-arg DB_URL=$DB_URL --build-arg DB_USER=$DB_USER --build-arg DB_PASSWORD=$DB_PASSWORD -t <your-docker-artifactory-location>/money-laundering-detector:0.0.1 .
+docker build --build-arg JAR_FILE=build/libs/rest-api-1.0.0.jar --build-arg DB_URL=$DB_URL --build-arg DB_USER=$DB_USER --build-arg DB_PASSWORD=$DB_PASSWORD -t <your-docker-artifactory-location>/rest-api:1.0.0 .
 
-# Push the image to the docker artifactory
-docker push <your-docker-artifactory-location>/money-laundering-detector:0.0.1
+# (Optional)Push the image to the docker artifactory
+docker push <your-docker-artifactory-location>/rest-api:1.0.0
 ```
 
 3. Run the application as a container
 
-Please create a `.env` file in the current directory. it should contain variables below,
+Please create a `.env` file in the current directory. It should contain variables below,
 
 ```
 POSTGRES_DB=<postgres-db-name>
@@ -63,9 +63,12 @@ DB_USER=<postgres-user-name>
 DB_PASSWORD=<postgres-password>
 ```
 
-This `.env` will be used in [compose.yaml](../compose.yaml). And run docker compose
+This `.env` will be used in [compose.yaml](../compose.yaml), and run docker compose
 
 ```
 docker compose up
-docker compose up -d # Run as background
+docker compose up -d # Run in background
 ```
+
+4. Initialize the DB
+Connect to the DB, and run the SQL script [here](../src/main/resources/databases/setup.sql)

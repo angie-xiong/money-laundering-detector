@@ -15,11 +15,11 @@ services:
       retries: 5
 
   app:
-    image: angiexiong0627/money-laundering-detector:0.0.1
+    image: angiexiong0627/rest-api:1.0.0
     build:
-      context: .
+      context: ..
       args:
-        JAR_FILE: build/libs/money-laundering-detector-0.0.1.jar
+        JAR_FILE: build/libs/rest-api-1.0.0.jar
     environment:
       DB_URL: ${DB_URL}
       DB_USER: ${DB_USER}

@@ -7,7 +7,7 @@ ENV DB_URL=${DB_URL}
 ENV DB_USER=${DB_USER}
 ENV DB_PASSWORD=${DB_PASSWORD}
 
-ARG JAR_FILE=target/money-laundering-detector-0.0.1.jar
+ARG JAR_FILE=target/rest-api-1.0.0.jar
 COPY ${JAR_FILE} app.jar
 
 # CMD ["sh", "-c", "java -jar app.jar --env=$DB_URL --env=$DB_USER --env=$DB_PASSWORD"]
