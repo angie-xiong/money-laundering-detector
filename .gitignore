@@ -9,7 +9,6 @@ rest-api/.gradle/
 
 ### IntelliJ IDEA ###
 .idea/
-rest-api/.idea/
 
 ### VS Code ###
 .vscode/
