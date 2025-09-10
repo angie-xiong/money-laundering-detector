@@ -1,0 +1,20 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+rest-api/.gradle
+rest-api/build/
+
+### IntelliJ IDEA ###
+.idea/
+rest-api/.idea/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+rest-api/.env
