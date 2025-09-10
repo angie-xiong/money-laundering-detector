@@ -46,7 +46,7 @@ You will need a docker artifactory, such as docker hub. The command below will u
 ```
 docker build --build-arg JAR_FILE=build/libs/rest-api-1.0.0.jar --build-arg DB_URL=$DB_URL --build-arg DB_USER=$DB_USER --build-arg DB_PASSWORD=$DB_PASSWORD -t <your-docker-artifactory-location>/rest-api:1.0.0 .
 
-# Push the image to the docker artifactory
+# (Optional)Push the image to the docker artifactory
 docker push <your-docker-artifactory-location>/rest-api:1.0.0
 ```
 
@@ -69,3 +69,6 @@ This `.env` will be used in [compose.yaml](../compose.yaml), and run docker comp
 docker compose up
 docker compose up -d # Run in background
 ```
+
+4. Initialize the DB
+Connect to the DB, and run the SQL script [here](../src/main/resources/databases/setup.sql)
