@@ -4,8 +4,8 @@
 # Log file
 *.log
 
-rest-api/.gradle
-rest-api/build/
+rest-api/build/*
+rest-api/.gradle/
 
 ### IntelliJ IDEA ###
 .idea/
